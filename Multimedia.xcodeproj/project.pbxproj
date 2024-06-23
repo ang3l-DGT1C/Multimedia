@@ -13,6 +13,12 @@
 		3D5C24D02C27441A005C3BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5C24CE2C27441A005C3BAC /* Main.storyboard */; };
 		3D5C24D22C27441D005C3BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5C24D12C27441D005C3BAC /* Assets.xcassets */; };
 		3D5C24D52C27441D005C3BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5C24D32C27441D005C3BAC /* LaunchScreen.storyboard */; };
+		3D5C24DD2C274723005C3BAC /* MUSIC3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D5C24DC2C274722005C3BAC /* MUSIC3.mp3 */; };
+		3D5C24E02C274756005C3BAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5C24DF2C274756005C3BAC /* AVFoundation.framework */; };
+		3D5C24E22C274761005C3BAC /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5C24E12C274760005C3BAC /* AVKit.framework */; };
+		3D5C24E42C274F16005C3BAC /* Parcels - Gamesofluck (Live from Hansa Studios, Berlin).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D5C24E32C274F16005C3BAC /* Parcels - Gamesofluck (Live from Hansa Studios, Berlin).mp3 */; };
+		3D5C24E62C27563D005C3BAC /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C24E52C27563D005C3BAC /* VideoPlayer.swift */; };
+		3D5C24E92C275E31005C3BAC /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 3D5C24E82C275E31005C3BAC /* YouTubeiOSPlayerHelper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,11 @@
 		3D5C24D12C27441D005C3BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5C24D42C27441D005C3BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D5C24D62C27441D005C3BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5C24DC2C274722005C3BAC /* MUSIC3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MUSIC3.mp3; sourceTree = "<group>"; };
+		3D5C24DF2C274756005C3BAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3D5C24E12C274760005C3BAC /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		3D5C24E32C274F16005C3BAC /* Parcels - Gamesofluck (Live from Hansa Studios, Berlin).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Parcels - Gamesofluck (Live from Hansa Studios, Berlin).mp3"; sourceTree = "<group>"; };
+		3D5C24E52C27563D005C3BAC /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5C24E22C274761005C3BAC /* AVKit.framework in Frameworks */,
+				3D5C24E02C274756005C3BAC /* AVFoundation.framework in Frameworks */,
+				3D5C24E92C275E31005C3BAC /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +56,7 @@
 			children = (
 				3D5C24C72C27441A005C3BAC /* Multimedia */,
 				3D5C24C62C27441A005C3BAC /* Products */,
+				3D5C24DE2C274756005C3BAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +71,8 @@
 		3D5C24C72C27441A005C3BAC /* Multimedia */ = {
 			isa = PBXGroup;
 			children = (
+				3D5C24E32C274F16005C3BAC /* Parcels - Gamesofluck (Live from Hansa Studios, Berlin).mp3 */,
+				3D5C24DC2C274722005C3BAC /* MUSIC3.mp3 */,
 				3D5C24C82C27441A005C3BAC /* AppDelegate.swift */,
 				3D5C24CA2C27441A005C3BAC /* SceneDelegate.swift */,
 				3D5C24CC2C27441A005C3BAC /* ViewController.swift */,
@@ -63,8 +80,18 @@
 				3D5C24D12C27441D005C3BAC /* Assets.xcassets */,
 				3D5C24D32C27441D005C3BAC /* LaunchScreen.storyboard */,
 				3D5C24D62C27441D005C3BAC /* Info.plist */,
+				3D5C24E52C27563D005C3BAC /* VideoPlayer.swift */,
 			);
 			path = Multimedia;
+			sourceTree = "<group>";
+		};
+		3D5C24DE2C274756005C3BAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D5C24E12C274760005C3BAC /* AVKit.framework */,
+				3D5C24DF2C274756005C3BAC /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = Multimedia;
+			packageProductDependencies = (
+				3D5C24E82C275E31005C3BAC /* YouTubeiOSPlayerHelper */,
+			);
 			productName = Multimedia;
 			productReference = 3D5C24C52C27441A005C3BAC /* Multimedia.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 3D5C24BC2C27441A005C3BAC;
+			packageReferences = (
+				3D5C24E72C275E31005C3BAC /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+			);
 			productRefGroup = 3D5C24C62C27441A005C3BAC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5C24DD2C274723005C3BAC /* MUSIC3.mp3 in Resources */,
 				3D5C24D52C27441D005C3BAC /* LaunchScreen.storyboard in Resources */,
+				3D5C24E42C274F16005C3BAC /* Parcels - Gamesofluck (Live from Hansa Studios, Berlin).mp3 in Resources */,
 				3D5C24D22C27441D005C3BAC /* Assets.xcassets in Resources */,
 				3D5C24D02C27441A005C3BAC /* Main.storyboard in Resources */,
 			);
@@ -138,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5C24E62C27563D005C3BAC /* VideoPlayer.swift in Sources */,
 				3D5C24CD2C27441A005C3BAC /* ViewController.swift in Sources */,
 				3D5C24C92C27441A005C3BAC /* AppDelegate.swift in Sources */,
 				3D5C24CB2C27441A005C3BAC /* SceneDelegate.swift in Sources */,
@@ -300,6 +336,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +365,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D5C24E72C275E31005C3BAC /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D5C24E82C275E31005C3BAC /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D5C24E72C275E31005C3BAC /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D5C24BD2C27441A005C3BAC /* Project object */;
 }
